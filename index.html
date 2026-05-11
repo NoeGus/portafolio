@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Noé</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<div class="contenedor">
+
+  <header>
+    <h1>Noé Gustavo Mondragón Trujillo</h1>
+    <p>Desarrollador junior</p>
+
+  </header>
+  <aside>
+    <div>
+  <!-- Links de navegación (desktop) -->
+      <ul>
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="contacto.html"> Contáctame</a></li>
+      </ul>
+    
+    </div>
+  </aside>
+  <main>
+  <section class="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Desarrollador fullstack jr, con experiencia en desarrollo de proyectos independientes y academicos,
+      especializado en la busqueda de optimizacion asi como la inovacion  de procesos.
+      Experiencia trabajando en python con librerias como NumPy o Pandas para el desarrollo de redes neuronales
+      Experiencia trabajando con metodologia agíl
+    </p>
+  </section>
+<div class="contenedorRadar">
+    <canvas id="standChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script> const ctx = document.getElementById('standChart');
+
+new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: [
+            'Creatividad',
+            'Frontend',
+            'Backend',
+            'Trabajo en equipo',
+            'Aprendizaje',
+            'Proactividad'
+        ],
+
+        datasets: [{
+            label: 'Mis Skills',
+
+            data: [85, 70, 60, 90, 95, 80],
+
+            fill: true,
+
+            borderWidth: 2,    
+            backgroundColor: 'rgba(115,155,255,0.2)',
+
+            borderColor: 'blue',
+
+            pointBackgroundColor: 'red',
+
+          pointRadius: 4,
+
+          borderWidth: 2
+        }]
+    },
+
+    options: {
+        scales: {
+            r: {
+                min: 0,
+                max: 100,
+
+                ticks: {
+                    stepSize: 10,
+                    display: false
+                },
+                grid:{
+                  circular: false,
+                  color: 'rgba(215,225,235,0.3)'
+                },
+
+            angleLines: {
+                display: true,
+                  color: 'rgba(115,125,135,0.3)'
+                
+            },
+
+            pointLabels: {
+                font: {
+                    size: 25
+                }
+            }
+            }
+        }
+    }
+});
+</script>
+    </div>
+  <section class="projects">
+  <h2>Proyectos</h2>
+  </section>
+  <section class="projectsC">
+  
+
+    <div class="card">
+      <h3>Tienda Deportiva</h3>
+      <p>Ecommerce simple con HTML, CSS y JS.</p>
+
+      <a href="#">GitHub</a>
+      <a href="#">Demo</a>
+    </div>
+
+    <div class="card">
+      <h3>Juego en Python</h3>
+      <p>Juego básico usando Python.</p>
+
+      <a href="#">GitHub</a>
+      <a href="#">Demo</a>
+    </div>
+
+  </section>
+</main>
+</div>
+</body>
+</html>
