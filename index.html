@@ -29,10 +29,9 @@
   <section class="about">
     <h2>Sobre mí</h2>
     <p>
-      Desarrollador fullstack jr, con experiencia en desarrollo de proyectos independientes y academicos,
-      especializado en la busqueda de optimizacion asi como la inovacion  de procesos.
-      Experiencia trabajando en python con librerias como NumPy o Pandas para el desarrollo de redes neuronales
-      Experiencia trabajando con metodologia agíl
+    Desarrollador Java Full Stack Jr. bilingüe, con experiencia en el desarrollo de aplicaciones web,proyectos orientados a inteligencia
+    artificial y procesamiento de datos, creación de proyectos orientados a la solución y optimización de procesos, interesado en aplicar los
+    conocimientos adquiridos para contribuir a la mejora de los procesos de la industria.
     </p>
   </section>
 <div class="contenedorRadar">
@@ -44,9 +43,9 @@ new Chart(ctx, {
     type: 'radar',
     data: {
         labels: [
-            'Creatividad',
-            'Frontend',
-            'Backend',
+            'Comunicacion',
+            'conocimiento técnico',
+            'Orientación a objetivos',
             'Trabajo en equipo',
             'Aprendizaje',
             'Proactividad'
@@ -55,7 +54,7 @@ new Chart(ctx, {
         datasets: [{
             label: 'Mis Skills',
 
-            data: [85, 70, 60, 90, 95, 80],
+            data: [70, 65, 80, 90, 95, 80],
 
             fill: true,
 
@@ -73,6 +72,19 @@ new Chart(ctx, {
     },
 
     options: {
+        plugins: {
+          legend: {
+            labels: {
+                font: {
+                    size: 25,
+                    weigth: 'bold'
+            
+                },
+
+                color: 'white'
+            }
+        }
+      },
         scales: {
             r: {
                 min: 0,
@@ -95,7 +107,7 @@ new Chart(ctx, {
 
             pointLabels: {
                 font: {
-                    size: 25
+                    size: 22
                 }
             }
             }
@@ -107,24 +119,72 @@ new Chart(ctx, {
   <section class="projects">
   <h2>Proyectos</h2>
   </section>
-  <section class="projectsC">
-  
+  <div class="projectsC">
+    <div class="card project-card">
 
-    <div class="card">
-      <h3>Tienda Deportiva</h3>
-      <p>Ecommerce simple con HTML, CSS y JS.</p>
+    <img src="Almiux_Logo.png" alt="logo almiux" class="project-image">
 
-      <a href="#">GitHub</a>
+
+      <div class="project-content">
+      <h3>Tienda Almiux</h3>
+      <p>Ecommerce simple con HTML, CSS y JS.
+        Desarrollo de una página web para la gestión de inventario de la tienda Almiux Locales, implementando interfaz frontend en HTML y lógica backend en JavaScript.
+        Participación en organización de productos, manejo de datos y estructura básica de sistema web.
+      </p>
+        <div class="tech-stack">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+        </div>
+      <div class="links">
+      <a href="https://github.com/Equipo-2-CH66/Frontend"
+      target="_blank">GitHub</a>
       <a href="#">Demo</a>
+      </div>
     </div>
+  </div>
+  <div class="card project-card">
 
-    <div class="card">
-      <h3>Juego en Python</h3>
-      <p>Juego básico usando Python.</p>
+    <img src="MusicNet.png"
+        alt="MusicNet"
+        class="project-image">
 
-      <a href="#">GitHub</a>
-      <a href="#">Demo</a>
+    <div class="project-content">
+
+        <h3>MusicNet</h3>
+
+        <h4>Transcripción Musical con IA</h4>
+
+        <p>
+            Modelo de redes neuronales en Python para
+            transcripción automática de música.
+        </p>
+
+        <div class="tech-stack">
+
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>Deep Learning</span>
+
+        </div>
+
+        <div class="links">
+
+            <a href="https://github.com/NoeGus/Transcripci-n-Autom-tica-de-M-sica-a-partir-de-un-Modelo-de-Red-Neuronal-Profunda"
+              target="_blank">
+
+              GitHub
+
+            </a>
+
+        </div>
+
     </div>
+  </div>
+</div>
 
   </section>
 </main>
